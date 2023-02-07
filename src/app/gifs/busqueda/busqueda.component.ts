@@ -20,7 +20,7 @@ export class BusquedaComponent {
   buscar(){
     const query = this.txtBuscar.nativeElement.value;
    
-    console.log(query);
+    // console.log(query);
     this.txtBuscar.nativeElement.value = '';//Asignamos vacio a la caja de texto
     this.gifservice.buscarGifs(query);
   }

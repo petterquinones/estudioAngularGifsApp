@@ -1,6 +1,15 @@
-<h1>Resultados</h1>
+<div class="row">
+    <div *ngFor="let result of Resultados" class="col-md-4 col-sm-6 animate__animated animate__bounceIn">
+        <div class="card">
+            <img [src]="result.images.downsized_medium.url" [alt]="result.title" class="card-img-top p-3">
+            <div class="card-body">
+                <p class="card-text">
+                    {{result.title}}
+                </p>
 
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, blanditiis dolorum maxime beatae voluptate
-    non necessitatibus atque ullam totam suscipit id amet et laudantium tempore! Aperiam quae qui minima ipsa!
-</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
